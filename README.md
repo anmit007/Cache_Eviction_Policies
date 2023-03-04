@@ -13,3 +13,8 @@
  	- LIFO stands for "Last In, First Out," and it is a cache eviction policy where the most recently added item to the cache is the first one to be evicted when the cache reaches its capacity. In other words, the items that were added last to the cache will be the first ones to be removed when the cache is full.
 	- When a new item is added to the cache, it is placed at the top of the cache stack. As the cache fills up, the oldest items that are at the bottom of the stack are evicted first to make room for the new items. This means that the items that are accessed frequently will remain in the cache, while the ones that are rarely accessed will be evicted.
 
+
+- FIFO
+
+	- FIFO stands for "First In, First Out," and it is a cache eviction policy where the oldest item in the cache is the first one to be evicted when the cache reaches its capacity. In other words, the items that were added first to the cache will be the first ones to be removed when the cache is full.
+	- When a new item is added to the cache, it is placed at the bottom of the cache stack. As the cache fills up, the oldest items that are at the top of the stack are evicted first to make room for the new items. This means that the items that were accessed or added first to the cache will remain in the cache, while the newer items will be evicted.
