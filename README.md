@@ -25,3 +25,12 @@
 	- However, since cache memory is typically limited in size, it can become full over time. When this happens, the LRU policy is used to determine which data to remove from the cache to make room for new data. The idea behind the LRU policy is that the least recently used data is the least likely to be accessed again in the near future, and so it can be safely removed from the cache.
     - To implement the LRU policy, the cache manager keeps track of the order in which data items are accessed. When the cache becomes full, the data item that was accessed least recently is evicted, freeing up space for new data to be stored. This process is repeated whenever the cache becomes full, with the least recently used data being evicted each time.
 	- The LRU cache eviction policy is widely used in computer systems and is an effective way to manage limited cache resources. However, there are other eviction policies that can be used as well, such as the LFU (Least Frequently Used) policy, which evicts the least frequently used data from the cache.
+
+- RR 
+	- Random Replacement (RR) is a cache eviction policy used in computer systems to determine which cache entries to remove when the cache becomes full and a new entry needs to be added. With this policy, the system randomly selects one of the cache entries to evict.
+	- When a cache is filled with data, new entries are added by evicting one of the existing entries. The goal of the eviction policy is to select the least useful entry for eviction, in order to maximize cache hit rates. In the case of RR, the eviction policy does not consider the usefulness or age of the entries in the cache. Instead, it selects an entry to evict at random.
+	- The advantage of RR is that it is simple to implement and requires no additional information about the contents of the cache. However, it may not always select the least useful entry for eviction, which can lead to lower cache hit rates and decreased performance in some cases. Other cache eviction policies, such as LRU (Least Recently Used) or LFU (Least Frequently Used), may be more effective in certain scenarios.
+
+
+
+
